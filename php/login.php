@@ -59,8 +59,8 @@ echo '
 			</tr>
 			<tr>
 				<td colspan="2">
-					<button class="btn btn-primary">Login</button>
-					<button class="btn btn-default">Cancel</button>
+					<button type="submit" class="btn btn-primary">Login</button>
+					<button type="reset" class="btn btn-default">Cancel</button>
 					<button class="btn btn-success">New User</button>
 				</td>
 			</tr>
