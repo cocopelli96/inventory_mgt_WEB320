@@ -1,0 +1,637 @@
+/* 
+	CSS file for WEB320 Midterm
+	The following statements import the Font Awesome and Bootstap
+	style libraries to use as a base for the styling of the website
+ */
+
+@import '../assets/bootstrap/css/bootstrap-theme.css';
+@import '../assets/bootstrap/css/bootstrap.css';
+@import '../assets/font-awesome/css/font-awesome.css';
+
+/* Classes for use anywhere in website */
+
+.font-bold
+{
+	font-weight: bold;
+}
+
+.pad-for-nav
+{
+	padding-top: 5%;
+}
+
+.inline
+{
+	display: inline;
+}
+
+/* End my classes */
+
+/* Start  screen style sheet code */
+@media only screen and (min-width: 1023px) {
+
+/********************************
+	Page Setup
+********************************/
+
+html, body 
+{
+	width: 100%;
+	height: 100%;
+	font-family: verdana;
+	font-size: 12pt;
+	background-color: #cd853f;
+	color: #000000;
+	margin: 0px;
+}
+
+#wrapper
+{
+	background-color: #cd853f;
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+#content
+{
+	width: 100%;
+	min-height: 70.5%;
+	padding: 10px;
+	overflow-x: auto;
+}
+
+h1
+{
+	font-size: 2em;
+	margin-top: 0;
+}
+
+h2, h3, h4
+{
+	margin-top: 0;
+}
+
+#footer
+{
+	width: 100%;
+	min-height: 10%;
+	background-color: #808000;
+	color: #ffffff;
+	padding: 5px;
+	font-size: .75em;
+}
+
+/***********************************
+	Banner Styles
+***********************************/
+
+#banner
+{
+	background-image: url("../images/vine.png");
+	width: 100%;
+	min-height: 12%;
+	background-color: #808000;
+	color: #ffffff;
+}
+
+#banner h1
+{
+	padding-top: 20px;
+}
+
+/************************************
+	Nav for the pages
+************************************/
+
+#nav
+{
+	width: 100%;
+	height: 7.5%;
+	margin-bottom: 0;
+	border-color: #8b4513;
+}
+
+#nav li
+{
+	background-color: #8b4513;
+	border-color: #cccccc;
+}
+
+#nav .container
+{
+	width: 100%;
+	background-color: #8b4513;
+}
+
+.nav
+{
+	margin-bottom: 0;
+}
+
+#nav .navbar-brand
+{
+	height: 7.5% !important;
+}
+
+.navbar-default, .navbar-collapse
+{
+	padding-left: 0;
+	padding-right: 0;
+	height: 7.5%;
+	background-color: #8b4513;
+}
+
+.container, #nav .navbar-collapse, #nav .navbar-nav, #nav ul, #nav li, #nav a
+{
+	height: 100% !important;
+}
+
+#nav a
+{
+	background-color: #9d4e15;
+	background-image: none;
+}
+
+#nav .active a
+{
+	background-color: #b45918;
+}
+
+#nav a:link, #nav a:visited
+{
+	color: #ffffff;
+}
+
+#nav a:focus, #nav a:hover
+{
+	background-color: #b45918;
+}
+
+/*********************************
+	Table Styles
+*********************************/
+
+.table-mgt
+{
+	border: 1px solid #000000;
+	background-color: #ca641c;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.table-mgt th
+{
+	background-color: #666600;
+	border-bottom: 1px solid #000000;
+	color: #ffffff;
+	padding: 5px;
+}
+
+.table-mgt td
+{
+	border-top: 1px solid #000000;
+	padding: 5px;
+}
+
+.h1-mgt
+{
+	width: 80%;
+}
+
+.fa
+{
+	background-color: #9d4e15;
+	color: #ffffff;
+	padding: 5px 10px;
+	border-color: #8b4513;
+}
+
+.img-td
+{
+	border-right: 1px solid #000000;
+}
+
+/************************************
+	Login Page Styles
+************************************/
+
+#login
+{
+	width: 50%;
+	margin: auto;
+	margin-top: 25px;
+	text-align: center;
+}
+
+#login h1
+{
+	text-align: center;
+}
+
+/************************************
+	Vendor Page Styles
+************************************/
+
+.vendor-row th
+{
+	background-color: #333300;
+}
+
+/************************************
+	Modal Styles
+************************************/
+
+.modal-content
+{
+	background-color: #808000;
+}
+
+.close
+{
+	opacity: 1;
+	text-shadow: none;
+}
+
+.modal-header
+{
+	background-color: #808000;
+	border-bottom-color: #000000;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.modal-body
+{
+	background-color: #cd853f;
+}
+
+.modal-footer
+{
+	background-color: #808000;
+	border-top-color: #000000;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+/*********************************
+	Edit Form Styles
+*********************************/
+
+.edit_form .table-mgt
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.edit_form .table-mgt tbody .edit_form_buttons
+{
+	text-align: center;
+}
+
+#prod_part_h1
+{
+	background-color: #333300;
+}
+
+/************************************
+	Account Page Styles
+************************************/
+
+#account
+{
+	width: 40%;
+	margin: auto;
+	margin-top: 25px;
+}
+
+} /* End screen sheet code */
+
+/* Start mobile sheet code */
+
+@media only screen and (max-width: 1023px) {
+
+/*****************************
+	Mobile Page Setup
+*****************************/
+
+html, body
+{
+	width: 100%;
+	height: 100%;
+	font-family: verdana;
+	font-size: 12pt;
+	background-color: #cd853f;
+	color: #000000;
+	margin: 0px;
+}
+
+#wrapper
+{
+	background-color: #cd853f;
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+#content
+{
+	width: 100%;
+	min-height: 73%;
+	padding: 10px;
+	overflow-x: auto;
+}
+
+h1
+{
+	font-size: 2em;
+	margin-top: 0;
+}
+
+h2, h3, h4
+{
+	margin-top: 0;
+}
+
+#footer
+{
+	width: 100%;
+	min-height: 10%;
+	background-color: #808000;
+	color: #ffffff;
+	padding: 5px;
+	font-size: .75em;
+}
+
+/***********************************
+	Mobile Banner Styles
+***********************************/
+
+#banner
+{
+	background-image: url("../images/vine.png");
+	width: 100%;
+	min-height: 12%;
+	background-color: #808000;
+	color: #ffffff;
+}
+
+#banner h1
+{
+	padding-top: 20px;
+}
+
+/************************************
+	Mobile Nav for the pages
+************************************/
+
+#nav
+{
+	width: 100%;
+	height: 5%;
+	margin-bottom: 0;
+	border-color: #8b4513;
+}
+
+#nav li
+{
+	background-color: #8b4513;
+	border-color: #cccccc;
+}
+
+#nav .container
+{
+	width: 100%;
+	background-color: #8b4513;
+}
+
+.nav
+{
+	margin-bottom: 0;
+}
+
+#nav .navbar-brand
+{
+	height: 5% !important;
+}
+
+.container, #nav .navbar-collapse, #nav .navbar-nav, #nav ul, #nav li, #nav a
+{
+	height: 100% !important;
+}
+
+#nav a
+{
+	font-size: 1.25em;
+}
+
+.navbar-default, .navbar-collapse
+{
+	padding-left: 0;
+	padding-right: 0;
+	height: 7.5%;
+	background-color: #8b4513;
+}
+
+#nav a
+{
+	background-color: #9d4e15;
+	background-image: none;
+}
+
+#nav .active a
+{
+	background-color: #b45918;
+}
+
+#nav a:link, #nav a:visited
+{
+	color: #ffffff;
+}
+
+#nav a:focus, #nav a:hover
+{
+	background-color: #b45918;
+}
+
+/*********************************
+	Mobile Table Styles
+*********************************/
+
+.table-mgt
+{
+	border: 1px solid #000000;
+	background-color: #ca641c;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.table-mgt th
+{
+	background-color: #666600;
+	border-bottom: 1px solid #000000;
+	color: #ffffff;
+	padding: 5px;
+}
+
+.table-mgt td
+{
+	border-top: 1px solid #000000;
+	padding: 5px;
+}
+
+.h1-mgt
+{
+	width: 80%;
+}
+
+.fa
+{
+	background-color: #9d4e15;
+	color: #ffffff;
+	padding: 5px 10px;
+	border-color: #8b4513;
+}
+
+.img-td
+{
+	border-right: 1px solid #000000;
+}
+
+/************************************
+	Mobile Login Page Styles
+************************************/
+
+#login
+{
+	width: 50%;
+	margin: auto;
+	margin-top: 25px;
+	text-align: center;
+}
+
+#login h1
+{
+	text-align: center;
+}
+
+/************************************
+	Mobile Vendor Page Styles
+************************************/
+
+.vendor-row th
+{
+	background-color: #333300;
+}
+
+/************************************
+	Mobile Modal Styles
+************************************/
+
+.modal-content
+{
+	background-color: #808000;
+}
+
+.close
+{
+	opacity: 1;
+	text-shadow: none;
+}
+
+.modal-header
+{
+	background-color: #808000;
+	border-bottom-color: #000000;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.modal-body
+{
+	background-color: #cd853f;
+}
+
+.modal-footer
+{
+	background-color: #808000;
+	border-top-color: #000000;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+/*********************************
+	Mobile Edit Form Styles
+*********************************/
+
+.edit_form .table-mgt
+{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.edit_form .table-mgt tbody .edit_form_buttons
+{
+	text-align: center;
+}
+
+#prod_part_h1
+{
+	background-color: #333300;
+}
+
+/************************************
+	Mobile Account Page Styles
+************************************/
+
+#account
+{
+	width: 40%;
+	margin: auto;
+	margin-top: 25px;
+}
+
+} /* End mobile sheet code */
+
+/* Start phone screen size code */
+
+@media only screen and (max-width: 767px)
+{
+
+/*******************************
+	Phone Screen Navbar Styles
+*******************************/
+
+.nav-collapse
+{
+	padding-left: inherit;
+	padding-right: inherit;
+}
+
+.navbar-nav
+{
+	margin-top: 0;
+}
+
+.navbar-toggle
+{
+	padding: 5px 10px;
+	background-color: #dddddd;
+}
+
+.navbar-default .navbar-toggle
+{
+	border-color: #bbbbbb;
+}
+
+.navbar-nav .dropdown-menu li
+{
+	background-color: #b45918 !important;
+}
+
+} /* End phone screen size code */
+

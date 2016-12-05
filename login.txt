@@ -1,0 +1,21 @@
+There are several user logins for this site and different permission levels for each user. The following list is user logins ordered by their permission level:
+
+Highest Permission Level
+	sam.smythe
+
+Second Permission Level
+	dan.mathews
+	harry.potter
+	jane.doe
+
+Middle Permission Level
+	bob.rand
+	marry.lamb
+	kenneth.brand
+
+No Permission Level
+	yuri.yuuko
+	danni.andrews
+	trevor.hammer
+
+All base passwords are Help123!
