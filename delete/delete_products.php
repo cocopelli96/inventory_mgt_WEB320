@@ -68,7 +68,7 @@ if (isset($_POST['delete_prod_input']))
 		
 		//begin upload code
 		//bored upload code setup from w3school.com
-		$full_path = "../images/products".$target_file;
+		$full_path = "../images/products/".$target_file;
 		$uploadOk = 1;
 		// Check if file already exists
 		if (!file_exists($full_path)) {
@@ -81,7 +81,7 @@ if (isset($_POST['delete_prod_input']))
 		// if everything is ok, try to upload file
 		} else {
 			if (unlink($full_path)) {
-				echo "The file ". $_POST["fileToDelete"] . " has been deleted.";
+				echo "The file ". $target_file . " has been deleted.";
 			} else {
 				echo "Sorry, there was an error deleting your file.";
 			}
