@@ -99,7 +99,7 @@ while ($row = mysqli_fetch_array($results))
 	
 	echo '			>Parts: ';
 	
-	$sql3 = 'select part_name from Part, ProductPart where productPart.part_id = Part.part_id and ProductPart.prod_id = '. $row['prod_id'] .';';
+	$sql3 = 'select part_name from Part, ProductPart where ProductPart.part_id = Part.part_id and ProductPart.prod_id = '. $row['prod_id'] .';';
 	$results3 = mysqli_query($link, $sql3);
 	
 	$count = 0;

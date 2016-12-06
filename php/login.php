@@ -12,17 +12,6 @@ echo '<title>Camp Champ Survival Store: Login</title>';
 include '../include/banner.inc';
 include '../include/navbar_2.inc';
 
-// Open the database
-if (!mysqli_select_db($link, $db5)){
-	die('Could not connect: ' . mysqli_error($link));
-    exit();
-}
-
-$sql = 'select Product.prod_id, prod_name, prod_descript, img_loc, prod_quant, prod_stock, prod_alt_date from Product, ProductInventory where Product.prod_id = ProductInventory.prod_id;';
-$results = mysqli_query($link, $sql);
-$sql2 = 'select Part.part_id, part_name, vid, part_quant, part_stock, part_alt_date from Part, PartInventory where Part.part_id = PartInventory.part_id;';
-$results2 = mysqli_query($link, $sql2);
-
 echo '
 <!-- Content Start -->
 <div id="content" class="pull-left">';
