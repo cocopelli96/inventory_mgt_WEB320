@@ -14,7 +14,12 @@ require '../include/mysql.inc';
 include '../include/header_2.inc';
 echo '<title>Camp Champ Survival Store: Account</title>';
 include '../include/banner.inc';
-include '../include/navbar_2.inc';
+
+if ($_SESSION['perm_id'] > 111) {
+	include '../include/navbar_2.inc';
+} else {
+	include '../include/navbar_4.inc';
+}
 
 // Open the database
 if (!mysqli_select_db($link, $db1)){
